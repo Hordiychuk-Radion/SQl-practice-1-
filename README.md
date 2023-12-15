@@ -53,8 +53,9 @@ WHERE EmployeeID = 2;
 INSERT INTO EmployeeData (EmployeeID, FirstName, LastName, Department, Salary) VALUES (6, 'New', 'Employee', 'Finance', 65000.00);
 ```
 **Delete an Employee (e.g., EmployeeID = 4)**
+```
 DELETE FROM EmployeeData WHERE EmployeeID = 4;
-
+```
 **Find Employees with Salaries above Average**
 ```
 SELECT * FROM EmployeeData WHERE Salary > (SELECT AVG(Salary) FROM EmployeeData);
